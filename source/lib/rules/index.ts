@@ -1,4 +1,3 @@
-import filesProperty from './files-property';
 import typesProperty from './types-property';
 import {Diagnostic, Context} from '../interfaces';
 
@@ -6,7 +5,6 @@ type RuleFunction = (context: Context) => Diagnostic[];
 
 // List of custom rules
 const rules = new Set<RuleFunction>([
-	filesProperty,
 	typesProperty
 ]);
 
